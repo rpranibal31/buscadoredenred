@@ -35,7 +35,9 @@ Con esta arquitectura, **Buscador de Comercios Edenred** ofrece una base sólida
 ---
 
 Visita la aplicación en línea sin necesidad de instalarla localmente:
-[https://buscadoredenred.vercel.app/](https://buscadoredenred.vercel.app/)
+[https://buscadoredenred.vercel.app/](https://restaurantfinder-liart.vercel.app/)
+nombre de usuario: usuarioDemo
+Contraseña: claveDemo
 
 Si aun necesita instalar localmente siga las siguientes instrucciones:
 
