@@ -21,7 +21,7 @@ export default function RestaurantItem({
 
   const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     e.currentTarget.onerror = null;
-    e.currentTarget.src = "/fallback.png"; // o la ruta que uses
+    e.currentTarget.src = "/fallback.png";
   };
   
 
