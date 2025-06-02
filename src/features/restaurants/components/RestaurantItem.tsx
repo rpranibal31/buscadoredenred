@@ -16,6 +16,15 @@ export default function RestaurantItem({
     ? `${getDistanceKm(userLocation, restaurant.position).toFixed(1)} km`
     : restaurant.distance;
 
+
+
+
+  const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.onerror = null;
+    e.currentTarget.src = "/fallback.png"; // o la ruta que uses
+  };
+  
+
   return (
     <div
       className="p-4 border-b border-gray-200 hover:bg-[#F8F9FA] cursor-pointer"
@@ -23,9 +32,10 @@ export default function RestaurantItem({
     >
       <div className="flex space-x-3">
         <img
-          src={restaurant.imageUrl}
+          src={restaurant.imageUrl || "/fallback.png"}
           alt={`${restaurant.name} restaurant`}
           className="w-24 h-24 object-cover rounded-lg"
+          onError={handleImgError}
         />
         <div className="flex-grow">
           <h3 className="font-semibold text-lg">{restaurant.name}</h3>
